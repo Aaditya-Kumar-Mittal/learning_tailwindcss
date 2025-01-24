@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>h-screen vs h-full</title>
+</head>
+
+<body class="h-screen bg-blue-100">
+  <!-- h-screen example -->
+  <div class="h-screen bg-red-400">
+    <p class="text-center text-white">This div is 100% of the viewport height (h-screen).</p>
+  </div>
+
+  <!-- Parent with h-screen and child with h-full -->
+  <div class="h-screen bg-green-400 flex items-center justify-center">
+    <div class="h-full w-1/2 bg-yellow-400 m-5">
+      <p class="text-center">This div is 100% of the parent's height (h-full).</p>
+    </div>
+    <div class="h-full w-1/2 bg-yellow-400 m-5">
+      <p class="text-center">This div is 100% of the parent's height (h-full).</p>
+    </div>
+  </div>
+</body>
+
+</html>

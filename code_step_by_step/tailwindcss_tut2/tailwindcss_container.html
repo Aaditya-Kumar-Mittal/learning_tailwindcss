@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Class in TailwindCSS</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+
+  <div class="bg-blue-500 p-5 container">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit vitae saepe possimus minima ipsam
+      fuga vel nam illo eaque?</h1>
+  </div>
+
+  <div class="bg-red-500 p-5 container mx-auto">
+    Centered Div x-axis margin is auto
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit vitae saepe possimus minima ipsam
+      fuga vel nam illo eaque?</h1>
+  </div>
+
+  <div class="bg-green-500 p-5 container mx-auto">
+    Centered Div using tailwindcss config file
+    <code>
+      <pre>
+          /** @type {import('tailwindcss').Config} */
+    module.exports = {
+      content: ["*"],
+      theme: {
+        extend: {
+          container: {
+            center: true,
+          }
+        },
+      },
+      plugins: [],
+    };
+
+      </pre>
+    </code>
+  </div>
+
+  <br>
+  <div class="bg-pink-500 p-5">
+    <ul class="flex justify-center  text-slate-900 text-xl [&>*]:p-4">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Home</a>
+      </li>
+    </ul>
+  </div>
+  <div class="bg-orange-500 p-5 container text-3xl mx-auto">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque impedit vitae saepe possimus minima ipsam
+      fuga vel nam illo eaque?</h1>
+  </div>
+  <div class="bg-slate-500 p-5 container mx-auto h-32"></div>
+  <div class="bg-yellow-500 p-5 container mx-auto h-32"></div>
+  <div class="bg-indigo-500 p-5 container mx-auto h-32"></div>
+
+
+</body>
+
+</html>

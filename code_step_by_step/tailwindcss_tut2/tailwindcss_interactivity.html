@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactivity in TailwindCSS</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+
+  <div
+    class="bg-orange-400  mx-5 my-5 p-5 text-center text-3xl text-slate-900 text-bold border-4 border-slate-900 rounded-lg hover:bg-orange-500 hover:text-white">
+    <h1>Intereactivity Classes in TailwindCSS</h1>
+  </div>
+
+  <div class="container mx-auto flex justify-center items-center flex-col space-y-5">
+
+    <button class=" w-1/2 h-32 bg-blue-600 text-white p-5 rounded-lg hover:bg-blue-700 ">Hover Effect</button>
+    <button class=" w-1/2 h-32 bg-blue-600 text-white p-5 rounded-lg hover:bg-red-700 hover:text-2xl">Hover
+      Effect</button>
+    <button class=" w-1/2 h-32 bg-blue-600 text-white p-5 rounded-lg focus:bg-yellow-700 focus:text-2xl">Focus Effect -
+      means when you click on the button and release the button long time</button>
+    <button class=" w-1/2 h-32 bg-blue-600 text-white p-5 rounded-lg active:bg-green-700 active:text-2xl">Active Effect
+      - means when you click on the button</button>
+
+      <div class="group bg-gray-200 p-4 text-3xl">
+        <h1 class="group-hover:text-red-500">Group Hover Title</h1>
+        <p class="group-hover:text-purple-700">Paragraph Changes on Parent Hover</p>
+      </div>
+      
+
+  </div>
+
+</body>
+
+</html>

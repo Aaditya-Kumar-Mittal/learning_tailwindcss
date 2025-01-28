@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailwindCSS Media Queries</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="flex flex-col items-center gap-4 p-4">
+
+  <!-- Default / Base Style -->
+  <div class="w-full h-16 bg-gray-400 text-white flex items-center justify-center">
+    Default (No Breakpoint)
+  </div>
+
+  <!-- sm: Minimum width 640px -->
+  <div class="w-full h-16 bg-gray-400 sm:bg-blue-400 text-white flex items-center justify-center">
+    sm (640px and above)
+  </div>
+
+  <!-- md: Minimum width 768px -->
+  <div class="w-full h-16 bg-gray-400 sm:bg-blue-400 md:bg-green-400 text-white flex items-center justify-center">
+    md (768px and above)
+  </div>
+
+  <!-- lg: Minimum width 1024px -->
+  <div
+    class="w-full h-16 bg-gray-400 sm:bg-blue-400 md:bg-green-400 lg:bg-yellow-400 text-white flex items-center justify-center">
+    lg (1024px and above)
+  </div>
+
+  <!-- xl: Minimum width 1280px -->
+  <div
+    class="w-full h-16 bg-gray-400 sm:bg-blue-400 md:bg-green-400 lg:bg-yellow-400 xl:bg-red-400 text-white flex items-center justify-center">
+    xl (1280px and above)
+  </div>
+
+  <!-- 2xl: Minimum width 1536px -->
+  <div
+    class="w-full h-16 bg-gray-400 sm:bg-blue-400 md:bg-green-400 lg:bg-yellow-400 xl:bg-red-400 2xl:bg-purple-400 text-white flex items-center justify-center">
+    2xl (1536px and above)
+  </div>
+
+</body>
+
+</html>

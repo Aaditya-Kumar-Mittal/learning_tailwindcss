@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailwindCSS Transition and Transform</title>
+  <link rel="stylesheet" href="./output.css"> <!-- Ensure this path is correct -->
+</head>
+
+<body>
+  <!-- Button 1: Basic hover effect -->
+  <button class="bg-blue-600 m-5 w-52 text-white p-5 font-bold text-2xl rounded hover:bg-slate-900">
+    Login
+  </button>
+
+  <!-- Button 2: Hover with background color transition -->
+  <button
+    class="bg-blue-600 m-5 w-52 text-white p-5 font-bold text-2xl rounded hover:bg-slate-900 transition duration-500">
+    Login
+  </button>
+
+  <!-- Button 3: Hover with opacity transition -->
+  <button
+    class="bg-blue-600 m-5 w-52 text-white p-5 font-bold text-2xl rounded hover:opacity-50 transition duration-1000">
+    Login
+  </button>
+
+  <button
+    class="bg-red-600 m-5 w-52 text-white p-5 font-bold text-2xl rounded hover:rotate-45 transition-transform duration-1000">
+    Login
+  </button>
+
+
+  <button
+    class="bg-red-600 m-5 w-52 text-white p-5 font-bold text-2xl rounded hover:scale-75 transition-transform duration-1000">
+    Login
+  </button>
+
+  <img src="./images/img-1.jpeg" class="m-5 w-52 hover:scale-150 hover:rotate-45 transition-transform duration-1000" alt="">
+</body>
+
+</html>

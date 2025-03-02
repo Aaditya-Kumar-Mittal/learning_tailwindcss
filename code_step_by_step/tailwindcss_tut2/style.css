@@ -1,3 +1,63 @@
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
 @tailwind base;
+/**
+  * @identifiers: This injects Tailwind's base styles and any base styles registered by plugins
+  * @description: This injects Tailwind's base styles and any base styles registered by plugins.
+  * @tags: tailwind, base, styles, plugins
+  */
+/** @identifier RULE */
+
+/**
+  * This injects Tailwind's component classes and any component classes
+  * registered by plugins.
+  */
 @tailwind components;
+
+/**
+  * This injects Tailwind's utility classes and any utility classes registered
+  * by plugins.
+  */
 @tailwind utilities;
+
+/**
+  * Use this directive to control where Tailwind injects the hover, focus,
+  * responsive, dark mode, and other variants of each class.
+  *
+  * If omitted, Tailwind will append these classes to the very end of
+  * your stylesheet by default.
+  */
+@tailwind variants;
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded m-2 hover:bg-blue-700;
+  }
+  .btn-secondary {
+    @apply bg-slate-600 text-white font-bold py-2 px-4 rounded m-2 hover:bg-slate-700;
+  }
+  .btn-success {
+    @apply bg-green-600 text-white font-bold py-2 px-4 rounded m-2 hover:bg-green-700;
+  }
+  .btn-danger {
+    @apply bg-red-600 text-white font-bold py-2 px-4 rounded m-2 hover:bg-red-700;
+  }
+  .btn-warning {
+    @apply bg-yellow-400 text-white font-bold py-2 px-4 rounded m-2 hover:bg-yellow-500;
+  }
+  .btn-info {
+    @apply bg-cyan-400 text-white font-bold py-2 px-4 rounded m-2 hover:bg-cyan-500;
+  }
+  .btn-light {
+    @apply bg-white text-black font-bold py-2 px-4 rounded m-2 hover:bg-slate-900 hover:text-white;
+  }
+  .btn-dark {
+    @apply bg-black text-white font-bold py-2 px-4 rounded m-2 hover:bg-white hover:text-black;
+  }
+
+  .img-gallery-image {
+    @apply w-80 hover:scale-110 transition duration-1000 rounded-3xl;
+  }
+}

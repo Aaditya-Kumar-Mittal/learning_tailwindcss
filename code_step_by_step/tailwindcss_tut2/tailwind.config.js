@@ -35,7 +35,11 @@ module.exports = {
     //   90: "900px",
     //   100: "1000px",
     // },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sigmar: ["Sigmar"],
+      },
+    },
   },
   plugins: [],
 };

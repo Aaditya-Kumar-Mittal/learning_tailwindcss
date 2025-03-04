@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Clone</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-950 flex flex-col min-h-screen">
+  <!-- Navbar (Fixed at the Top) -->
+  <nav class="fixed top-0 left-0 w-full bg-white p-4 flex justify-between items-center">
+    <div class="flex space-x-4">
+      <button>About</button>
+      <button>Store</button>
+    </div>
+    <div class="flex space-x-4 items-center">
+      <a href="#">Gmail</a>
+      <a href="#">Images</a>
+      <a href="#" aria-label="Science"><span class="material-symbols-outlined">science</span></a>
+      <a href="#" aria-label="Apps"><span class="material-symbols-outlined">apps</span></a>
+      <a href="#" aria-label="Account"><span class="material-symbols-outlined">account_circle</span></a>
+    </div>
+  </nav>
+
+  <!-- Main Content (Centered) -->
+  <div class="flex-grow flex flex-col items-center justify-center mt-20">
+    <div class="flex flex-col items-center">
+      <img src="./images/google.png" alt="Google Logo" class="w-[300px] md:w-[400px] lg:w-[512px]">
+    </div>
+    
+    <!-- Search Bar with Shadow -->
+    <div class="flex items-center space-x-2 bg-gray-100 rounded-full p-3 w-full max-w-lg mt-6 shadow-md">
+      <span class="material-symbols-outlined">search</span>
+      <input type="text" class="w-full bg-transparent outline-none" placeholder="Search Google or type a URL">
+      <span class="material-symbols-outlined">mic</span>
+      <span class="material-symbols-outlined">image</span>
+    </div>
+
+    <!-- Buttons with Shadow -->
+    <div class="flex space-x-4 mt-6">
+      <button class="bg-slate-100 p-2 rounded-sm shadow-md hover:bg-gray-200">Google Search</button>
+      <button class="bg-slate-100 p-2 rounded-sm shadow-md hover:bg-gray-200">I'm Feeling Lucky</button>
+    </div>
+  </div>
+
+  <!-- Footer (Fixed at the Bottom) -->
+  <footer class="fixed bottom-0 left-0 w-full bg-gray-100 p-5">
+    <div>India</div>
+    <hr class="my-2 text-gray-300">
+    <div class="flex items-center justify-between">
+      <div class="flex space-x-4">
+        <button>About</button>
+        <button>Advertising</button>
+        <button>Business</button>
+        <button>How Search Works</button>
+      </div>
+      <div class="flex space-x-4">
+        <button>Privacy</button>
+        <button>Terms</button>
+        <button>Settings</button>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
